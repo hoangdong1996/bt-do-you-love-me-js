@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trò chơi Do You Love Me </title>
+</head>
+<body>
+<p>Do You Love Me </p>
+<input type="button" onclick="output()" value="Yes">
+<input type="button" id="no" onclick="random()" value="No">
+<p id = "show"></p>
+<script>
+    let value = document.getElementById("no");
+    value.style.position = 'relative';
+    value.style.left = 0 + 'px';
+    value.style.top = 0 + 'px';
+    function output() {
+        document.getElementById("show").innerHTML = "I love you"
+    }
+    function random() {
+        value.style.left = Math.random(value.style.left)*1000 + 'px';
+        value.style.top = Math.random(value.style.top)*1000 + 'px';
+    }
+</script>
+</body>
+</html>
